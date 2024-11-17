@@ -18,7 +18,7 @@ const uusiPeli = () => {
 
 uusiPeli();
 
-const korvaaLoydettyKirjain = (arvaus) => {
+function korvaaLoydettyKirjain(arvaus) {
   for (let i = 0; i < arvottuSana.length; i++) {
     const kirjain = arvottuSana.substring(i, i + 1);
     if (kirjain === arvaus) {
@@ -29,7 +29,7 @@ const korvaaLoydettyKirjain = (arvaus) => {
     }
   }
   output.innerHTML = piilotettuSana;
-};
+}
 
 const voitto = () => {
   alert(`Arvasit sanan, sana on ${arvottuSana} `);
